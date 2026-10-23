@@ -116,3 +116,13 @@
         gap: 24px;
     }
 }
+
+.order-category {
+    margin: 0 0 6px;
+    font-size: 20px;
+}
+
+.order-error {
+    padding: 10px;
+    border: 1px solid tomato;
+}

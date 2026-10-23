@@ -72,3 +72,7 @@
         grid-template-columns: 1fr;
     }
 }
+
+.dish.selected {
+    border-color: tomato;
+}
