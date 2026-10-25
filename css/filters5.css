@@ -1,0 +1,34 @@
+.dish-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.dish-filters button {
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.dish-filters button:hover {
+    border-color: tomato;
+}
+
+.dish-filters button.active {
+    background-color: tomato;
+}
+
+.dish-filters button:focus-visible {
+    outline: 2px solid tomato;
+    outline-offset: 3px;
+}
+
+.dish[hidden] {
+    display: none;
+}
