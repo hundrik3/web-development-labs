@@ -1,0 +1,51 @@
+.access-form {
+    margin: 0 0 24px;
+    padding: 16px;
+    border: 1px solid gray;
+}
+
+.access-form input, .access-form button {
+    max-width: 100%;
+    padding: 8px;
+    margin: 4px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.access-form p {
+    margin: 8px 0 0;
+}
+
+.checkout-panel {
+    position: sticky;
+    bottom: 0;
+    padding: 16px 24px;
+    border-top: 2px solid tomato;
+    background-color: white;
+    z-index: 10;
+}
+
+.checkout-panel p {
+    margin: 0 0 8px;
+}
+
+.checkout-panel a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid tomato;
+    border-radius: 10px;
+}
+
+.checkout-panel a[aria-disabled="true"] {
+    color: gray;
+    border-color: gray;
+    cursor: not-allowed;
+}
+
+.checkout-main .dish-grid {
+    margin-bottom: 24px;
+}
+
+.access-form button, #menu-retry {
+    cursor: pointer;
+}
