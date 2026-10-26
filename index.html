@@ -7,141 +7,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            color: #222222;
-            background-color: #ffffff;
-            font-family: "Roboto", Arial, sans-serif;
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 1.5;
-        }
-
-        header, main {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 24px;
-        }
-
-        h1 {
-            margin: 0 0 20px;
-            font-size: 36px;
-            font-weight: 700;
-        }
-
-        nav a {
-            display: inline-block;
-            margin-right: 24px;
-            margin-bottom: 8px;
-        }
-
-        a {
-            color: #222222;
-            font-family: "Roboto", Arial, sans-serif;
-            font-size: 18px;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #d74420;
-        }
-
-        main {
-            padding-top: 0;
-        }
-
-        section {
-            margin-bottom: 36px;
-        }
-
-        h2 {
-            margin: 0 0 16px;
-            font-size: 28px;
-            font-weight: 700;
-        }
-
-        img {
-            width: 70%;
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin-bottom: 20px;
-        }
-
-        p {
-            margin: 0 0 16px;
-        }
-
-        ul {
-            margin: 0;
-            padding-left: 24px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .table-wrapper {
-            overflow-x: auto;
-        }
-
-        table {
-            width: 60%;
-            border: 1px solid #222222;
-            border-collapse: collapse;
-            text-align: left;
-        }
-
-        th, td {
-            border: 1px solid #222222;
-            padding: 12px;
-        }
-
-        th {
-            font-weight: 700;
-            background-color: #f4f4f4;
-        }
-
-        footer {
-            margin-top: 24px;
-            padding: 28px 24px;
-            background-color: black;
-            color: white;
-        }
-
-        footer p {
-            max-width: 1052px;
-            margin: 0 auto;
-        }
-
-        footer a {
-            color: white;
-        }
-
-        footer a:hover {
-            color: #d74420;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="page-header">
         <h1>Food Construct</h1>
-        <nav aria-label="Основная навигация">
-            <a href="index.html">О нас</a>
-            <a href="lunch.html">Собрать ланч</a>
-            <a href="orders.html">Заказы</a>
+        <nav class="navigation" aria-label="Основная навигация">
+            <a class="active" href="1.html" aria-current="page">О нас</a>
+            <a href="lunch9.html">Собрать ланч</a>
+            <a href="orders9.html">Оформить заказ</a>
+            <a href="9.html">Заказы</a>
             <a href="#contacts">Контакты</a>
         </nav>
     </header>
 
-    <main>
+    <main class="page-main">
         <section>
-            <img src="https://mospolytech-web-course.netlify.app/images/lunch.jpg" alt="Бизнес-ланч с горячим блюдом и овощами">
+            <img class="about-image" src="images/lunch.jpg" alt="Бизнес-ланч с горячим блюдом и овощами">
             <h2>О нас</h2>
             <p>Food Construct — учебный проект службы доставки бизнес-ланчей в Москве. Мы предлагаем супы, горячие блюда и салаты для обеда дома или в офисе. Здесь можно познакомиться с меню и выбрать блюда на свой вкус.</p>
         </section>
@@ -158,7 +40,7 @@
         <section>
             <h2>Популярные блюда</h2>
             <div class="table-wrapper">
-                <table>
+                <table class="popular-table">
                     <thead>
                         <tr>
                             <th scope="col">№</th>
@@ -179,8 +61,12 @@
         </section>
     </main>
 
-    <footer id="contacts">
-        <p>Связаться с нами: <a href="tel:+74951234567">+7 (495) 123-45-67</a> (учебный пример)</p>
+    <footer class="page-footer" id="contacts">
+        <p>Связаться с нами: <a href="tel:+74951234567">+7&nbsp;(495)&nbsp;123&#8209;45&#8209;67</a> (учебный пример)</p>
     </footer>
 </body>
 </html>
+
+
+
+
