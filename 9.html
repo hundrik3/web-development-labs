@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Собрать ланч — Food Construct</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lunch.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/filters5.css">
+    <link rel="stylesheet" href="css/combos6.css">
+    <link rel="stylesheet" href="css/checkout8.css">
+    <link rel="stylesheet" href="css/history9.css">
+    <script src="js/lab9/history.js" defer></script>
+</head>
+<body>
+    <header class="page-header">
+        <h1>Food Construct</h1>
+        <nav class="navigation" aria-label="Основная навигация">
+            <a href="1.html">О нас</a>
+            <a href="lunch9.html">Собрать ланч</a>
+            <a href="orders9.html">Оформить заказ</a>
+            <a class="active" href="9.html" aria-current="page">Заказы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <form class="access-form">
+            <label for="api-key">Ключ доступа</label>
+            <input type="password" id="api-key" autocomplete="new-password" required>
+            <button type="submit" id="save-api-key">Сохранить ключ</button>
+            <p>Введите персональный ключ из СДО для загрузки меню и оформления заказа.</p>
+        </form>
+        <h2>История заказов</h2>
+        <p id="history-status" role="status">Введите ключ доступа, чтобы загрузить историю.</p>
+        <button type="button" id="history-retry" hidden>Повторить</button>
+        <p id="history-notice" role="status"></p>
+        <div class="history-scroll"><table class="history-table"><thead><tr><th>№</th><th>Дата оформления</th><th>Состав заказа</th><th>Стоимость</th><th>Время доставки</th><th>Действия</th></tr></thead><tbody id="orders-body"></tbody></table></div>
+    </main>
+
+
+    <footer class="page-footer" id="contacts">
+        <p>Связаться с нами: <a href="tel:+74951234567">+7&nbsp;(495)&nbsp;123&#8209;45&#8209;67</a> (учебный пример)</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+

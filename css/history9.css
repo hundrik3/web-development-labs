@@ -1,0 +1,14 @@
+.history-scroll { overflow-x: auto; max-width: 100%; }
+.history-table { width: 100%; border-collapse: collapse; }
+.history-table th, .history-table td { border: 1px solid gray; padding: 10px; text-align: left; }
+.history-actions button { display: block; margin: 4px 0; }
+.history-overlay { position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center; padding: 20px; background-color: rgba(0,0,0,0.4); }
+.history-dialog { position: relative; width: 100%; max-width: 620px; max-height: 90vh; overflow-y: auto; padding: 32px; background-color: white; border: 1px solid black; }
+.history-close { position: absolute; top: 6px; right: 8px; }
+.history-dialog button, .history-actions button, #history-retry { padding: 8px 12px; border: 1px solid black; background-color: white; color: black; font-family: inherit; font-size: 16px; cursor: pointer; }
+.history-dialog button:hover, .history-actions button:hover { background-color: tomato; }
+.history-dialog button:disabled { opacity: 0.5; cursor: wait; }
+.history-modal-error { color: black; border-left: 3px solid tomato; padding-left: 10px; }
+.history-modal-error:empty { display: none; }
+.history-dialog button:focus-visible { outline: 2px solid tomato; outline-offset: 3px; }
+@media (max-width: 600px) { .history-dialog { padding: 28px 16px 16px; } .history-table { font-size: 16px; } }
