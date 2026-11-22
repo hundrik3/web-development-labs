@@ -1,0 +1,19 @@
+.brand-text, a {
+    color: #b52e16;
+}
+
+.btn-primary {
+    --bs-btn-color: #000;
+    --bs-btn-bg: tomato;
+    --bs-btn-border-color: tomato;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #ff8069;
+    --bs-btn-hover-border-color: #ff8069;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #ff8069;
+    --bs-btn-active-border-color: #ff8069;
+}
+
+.nav-link:hover, a:hover {
+    color: #912411;
+}
