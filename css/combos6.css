@@ -1,0 +1,102 @@
+.combo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px 16px;
+    margin-bottom: 40px;
+}
+
+.combo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 0;
+}
+
+.combo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.combo-item img {
+    width: 52px;
+    max-width: 100%;
+    height: 52px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+.combo-item img:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+.combo-item p {
+    margin: 8px 0 0;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+.combo-item .combo-note {
+    font-size: 14px;
+}
+
+.notification-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.notification-dialog {
+    width: 100%;
+    max-width: 440px;
+    padding: 32px;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+}
+
+.notification-message {
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+
+.notification-button {
+    padding: 10px 36px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-family: inherit;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.notification-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.notification-button:focus-visible {
+    outline: 2px solid tomato;
+    outline-offset: 3px;
+}
+
+@media (max-width: 800px) {
+    .combo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .combo-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
